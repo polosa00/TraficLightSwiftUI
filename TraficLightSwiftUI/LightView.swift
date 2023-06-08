@@ -8,21 +8,20 @@
 import SwiftUI
 
 struct LightView: View {
- 
+    var color: Color
     var body: some View {
         ZStack {
             Circle()
                 .frame(width: 100, height: 100)
-                .foregroundColor(.gray)
                 .overlay(Circle().stroke(Color(.white), lineWidth: 4))
+                .foregroundColor(color)
         }
         .padding(.top, 10)
-        .opacity(0.3)
     }
 }
 
 struct LightView_Previews: PreviewProvider {
     static var previews: some View {
-        LightView()
+        LightView(color: .blue)
     }
 }

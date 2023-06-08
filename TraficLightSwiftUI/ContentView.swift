@@ -11,11 +11,7 @@ struct ContentView: View {
     enum TraficLight {
         case red, yellow, green
     }
-    var buttonTitle = "START"
-    
-    private let lightOn = 1.0
-    private let lightOff = 0.3
-    
+    @State private var buttonTitle = "START"
     @State private var currentColor: TraficLight = .red
     
     var body: some View {
@@ -23,22 +19,10 @@ struct ContentView: View {
             Color(.black)
                 .ignoresSafeArea()
             VStack{
-                Circle()
-                    .frame(width: 100, height: 100)
-                    .foregroundColor(currentColor == .red ? .red : .red.opacity(lightOff))
-                    .overlay(Circle().stroke(Color(.white), lineWidth: 4))
-                    .padding(.top, 10)
-                Circle()
-                    .frame(width: 100, height: 100)
-                    .foregroundColor(currentColor == .yellow ? .yellow : .yellow.opacity(lightOff))
-                    .overlay(Circle().stroke(Color(.white), lineWidth: 4))
-                    .padding(.top, 10)
-                Circle()
-                    .frame(width: 100, height: 100)
-                    .foregroundColor(currentColor == .green ? .green : .green.opacity(lightOff))
-                    .overlay(Circle().stroke(Color(.white), lineWidth: 4))
-                    .padding(.top, 10)
-               
+                LightView(color: currentColor == .red ? .red : .red.opacity(0.3))
+                LightView(color: currentColor == .yellow ? .yellow : .yellow.opacity(0.3))
+                LightView(color: currentColor == .green ? .green : .green.opacity(0.3))
+                
                 Spacer()
                 
                 Button(action: buttonPressed) {
@@ -52,7 +36,6 @@ struct ContentView: View {
                 .frame(width: 150, height: 45)
                 .background(.blue)
                 .cornerRadius(15)
-
                 .overlay(RoundedRectangle(cornerRadius: 15).stroke(Color.white, lineWidth: 4))
             }
             .padding()
@@ -60,6 +43,7 @@ struct ContentView: View {
     }
     
     private func buttonPressed() {
+        self.buttonTitle = "NEXT"
         switch self.currentColor {
         case .red:
             currentColor = .yellow
