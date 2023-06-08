@@ -8,14 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    let
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack {
+            Color(.black)
+                .ignoresSafeArea()
+            VStack{
+                LightView(color: .red)
+                LightView(color: .yellow)
+                LightView(color: .green)
+                Spacer()
+                ButtonView()
+            }
+            .padding()
         }
-        .padding()
+      
+        
     }
 }
 

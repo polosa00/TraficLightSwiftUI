@@ -11,6 +11,8 @@
 		11F01CF52A327CE1005398B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F01CF42A327CE1005398B1 /* ContentView.swift */; };
 		11F01CF72A327CE3005398B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11F01CF62A327CE3005398B1 /* Assets.xcassets */; };
 		11F01CFA2A327CE3005398B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11F01CF92A327CE3005398B1 /* Preview Assets.xcassets */; };
+		11F01D012A327D0F005398B1 /* LightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F01D002A327D0F005398B1 /* LightView.swift */; };
+		11F01D032A3280CA005398B1 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F01D022A3280CA005398B1 /* ButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		11F01CF42A327CE1005398B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		11F01CF62A327CE3005398B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11F01CF92A327CE3005398B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		11F01D002A327D0F005398B1 /* LightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightView.swift; sourceTree = "<group>"; };
+		11F01D022A3280CA005398B1 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,8 @@
 			isa = PBXGroup;
 			children = (
 				11F01CF22A327CE1005398B1 /* TraficLightSwiftUIApp.swift */,
+				11F01D002A327D0F005398B1 /* LightView.swift */,
+				11F01D022A3280CA005398B1 /* ButtonView.swift */,
 				11F01CF42A327CE1005398B1 /* ContentView.swift */,
 				11F01CF62A327CE3005398B1 /* Assets.xcassets */,
 				11F01CF82A327CE3005398B1 /* Preview Content */,
@@ -138,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				11F01CF52A327CE1005398B1 /* ContentView.swift in Sources */,
+				11F01D012A327D0F005398B1 /* LightView.swift in Sources */,
+				11F01D032A3280CA005398B1 /* ButtonView.swift in Sources */,
 				11F01CF32A327CE1005398B1 /* TraficLightSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
