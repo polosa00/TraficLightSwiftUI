@@ -9,6 +9,7 @@ import SwiftUI
 
 struct LightView: View {
     var color: Color
+    
     var body: some View {
         ZStack {
             Circle()

@@ -53,10 +53,9 @@
 		11F01CF12A327CE1005398B1 /* TraficLightSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				11F01CF22A327CE1005398B1 /* TraficLightSwiftUIApp.swift */,
-				11F01D002A327D0F005398B1 /* LightView.swift */,
-				11F01CF42A327CE1005398B1 /* ContentView.swift */,
-				11F01CF62A327CE3005398B1 /* Assets.xcassets */,
+				11F01D072A32956D005398B1 /* App */,
+				11F01D062A329553005398B1 /* Views */,
+				11F01D082A3295BB005398B1 /* Resources */,
 				11F01CF82A327CE3005398B1 /* Preview Content */,
 			);
 			path = TraficLightSwiftUI;
@@ -68,6 +67,31 @@
 				11F01CF92A327CE3005398B1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		11F01D062A329553005398B1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				11F01CF42A327CE1005398B1 /* ContentView.swift */,
+				11F01D002A327D0F005398B1 /* LightView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		11F01D072A32956D005398B1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				11F01CF22A327CE1005398B1 /* TraficLightSwiftUIApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		11F01D082A3295BB005398B1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				11F01CF62A327CE3005398B1 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
