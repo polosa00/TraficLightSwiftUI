@@ -13,7 +13,6 @@ enum TraficLight {
 
 struct ContentView: View {
 
-    @State private var buttonTitle = "START"
     @State private var currentColor: TraficLight = .startingLight
    
     private let lightOn = 1.0
@@ -50,11 +49,10 @@ struct ContentView: View {
                             .stroke(Color.white, lineWidth: 4))
                 }
             }
-            .padding()
+            .padding(.bottom, 20)
         }
     }
 
-    
     private func buttonPressed() {
     
         switch self.currentColor {
