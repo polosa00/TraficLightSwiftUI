@@ -14,26 +14,26 @@ enum TraficLight {
 struct ContentView: View {
 
     @State private var currentColor: TraficLight = .startingLight
-   
-    private let lightOn = 1.0
-    private let lightOff = 0.3
     
     var body: some View {
         ZStack {
             Color(.black)
                 .ignoresSafeArea()
-            VStack {
-                
-                LightView(color: .red)
-                    .opacity(currentColor == .red
-                             ? lightOn : lightOff)
-                LightView(color: .yellow)
-                    .opacity(currentColor == .yellow
-                             ? lightOn : lightOff)
-                LightView(color: .green)
-                    .opacity(currentColor == .green
-                             ? lightOn : lightOff)
-                
+            
+            VStack(spacing: 20) {
+                LightView(
+                    color: .red,
+                    opacity: currentColor == .red ? 1 : 0.3
+                )
+                LightView(
+                    color: .yellow,
+                    opacity: currentColor == .yellow ? 1 : 0.3
+                )
+                LightView(
+                    color: .green,
+                    opacity: currentColor == .green ? 1 : 0.3
+                )
+                   
                 Spacer()
                 
                 Button(action: buttonPressed) {
@@ -45,8 +45,9 @@ struct ContentView: View {
                         .frame(width: 150, height: 50)
                         .background(.blue)
                         .cornerRadius(15)
-                        .overlay(RoundedRectangle(cornerRadius: 15)
-                            .stroke(Color.white, lineWidth: 4))
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 15)
+                                .stroke(Color.white, lineWidth: 4))
                 }
             }
             .padding(.bottom, 20)
